@@ -1,3 +1,5 @@
+import math
+
 
 def reciprocal(x):
     return 1/x
@@ -8,6 +10,7 @@ def square(x):
 
 
 def sqrt(x):
-    return pow(x, 0.5)
-
-
+    try:
+        return math.sqrt(x)
+    except ValueError:
+        return "error"
